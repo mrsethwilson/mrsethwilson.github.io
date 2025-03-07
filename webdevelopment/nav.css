@@ -50,7 +50,6 @@ nav ul li:hover .dropdown {
 }
 
 nav ul .dropdown li {
-    display: flex; 
     padding: 10px 15px; 
     white-space: nowrap; 
 }
