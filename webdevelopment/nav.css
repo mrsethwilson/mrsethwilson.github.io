@@ -39,7 +39,6 @@ nav ul .dropdown {
     padding: 0;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 nav ul li {
@@ -49,7 +48,6 @@ nav ul li {
 nav ul li:hover .dropdown {
     display: flex;
 }
-
 
 nav ul .dropdown li {
     display: flex; 
