@@ -27,10 +27,6 @@ nav a:hover {
     background-color: #002E6D; 
 }
 
-nav ul li {
-    position: relative; 
-}
-
 nav ul .dropdown {
     display: none; 
     position: absolute;
@@ -46,6 +42,9 @@ nav ul .dropdown {
 
 }
 
+nav ul li {
+    position: relative; 
+}
 
 nav ul li:hover .dropdown {
     display: flex;
