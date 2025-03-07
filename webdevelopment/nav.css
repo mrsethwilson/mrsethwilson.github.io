@@ -12,7 +12,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 20px;
 }
 
 nav a {
@@ -26,4 +25,49 @@ nav a {
 
 nav a:hover {
     background-color: #002E6D; 
+}
+
+nav ul li {
+    position: relative; 
+}
+
+nav ul .dropdown {
+    display: none; 
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background-color: #0047BA;
+    border: 3px solid #002E6D;
+    border-radius: 5px;
+    width: 135px;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+nav ul li:hover .dropdown {
+    display: flex;
+}
+
+
+nav ul .dropdown li {
+    display: flex; 
+    padding: 10px 15px; 
+    white-space: nowrap; 
+}
+
+
+nav ul .dropdown li a {
+    display: block; 
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+
+nav ul .dropdown li a:hover {
+    background-color: #002E6D;
 }
