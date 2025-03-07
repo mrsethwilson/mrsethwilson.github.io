@@ -6,6 +6,7 @@ nav {
   background-color: #0047BA;
 }
 
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 
 nav a {
     display: inline-block;
@@ -23,9 +25,12 @@ nav a {
     border-radius: 5px;
 }
 
+
 nav a:hover {
     background-color: #002E6D; 
 }
+
+
 
 nav ul .dropdown {
     display: none; 
@@ -41,13 +46,16 @@ nav ul .dropdown {
     align-items: flex-start;
 }
 
+
 nav ul li {
     position: relative; 
 }
 
+
 nav ul li:hover .dropdown {
     display: flex;
 }
+
 
 nav ul .dropdown li {
     padding: 10px 15px; 
