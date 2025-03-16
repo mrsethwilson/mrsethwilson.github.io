@@ -1,10 +1,99 @@
-h1 {
-    color: #0047BA;
+* {
+    box-sizing: border-box;
 }
-
-body {
+  
+  body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #0047BA;
+    font-size: 50px; 
+    color: #FFFFFF;
+    padding: 3rem;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  
+  .center-img {
+    display: block;
+    margin: 3rem auto;
+  }
+  
+  main {
+    background-color: #FFFFFF;
+    padding: 1rem 0;
+    margin: 0 2rem;
+  }
+  
+  .about-me {
+    border: 1px solid #0047BA;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .three-column-box {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .three-column {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .three-column .credential {
+    flex: 1;
+    border: 1px solid #0047BA;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  
+  .lower-image {
+    display: block;
+    width: 50%;
+    margin: 3rem auto 0 auto; 
+    height: auto;
+  }
+  
+  .quote-section {
+    text-align: center;
+  }
+  blockquote {
+    font-style: italic;
+    margin: 1rem auto 3rem auto;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.5rem 10rem;
+    background-color: #0047BA;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #00347B;
+  }
+  .button:hover {
+    background-color: #00347B;
+  }
+  
+  footer {
+    background-color: #0047BA;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  footer p {
+    margin: 0;
+  }
+  

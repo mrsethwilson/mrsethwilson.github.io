@@ -1,85 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <meta charset="utf-8">
+  <title>About Me</title>
 
-            <!--
-            
-            Title:  About Me Page
-            Name:  Seth Wilson
-            Course: IS_LT-4355-7355
-            Instructor: Jennifer Kueter
-            School:  University of Missouri–Columbia
-            Date: Feb 6, 2025
-            
-            -->
-               <meta charset="utf-8">
-               <title>About Me</title>
-
-                <link rel="stylesheet" href="style.css">
-                <link rel="stylesheet" href="nav.css">
-
-               <style>
-               
-                a {
-                    display: inline-block;
-                    background-color: #0047BA;
-                    border: 3px solid #002E6D;
-                    padding: 10px 15px;
-                    color: #FFFFFF;
-                    font-weight: bold;
-                    margin-left: 100px;
-                    border-radius: 5px;
-                }
-        
-                a:hover {
-                    background-color: #002E6D;
-                }
-            </style>
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-             
 
-            
-                <h1>Seth Wilson</h1>
-            
-                <h3>About Me</h3>
-            
-     <main>
-                <p>
-                    My name is Seth Wilson, and I am a <em>high-performance</em> coach, <em>sales leader</em>, and <em>business owner</em> from the Kansas City area. 
-                </p>
+  <nav>
+    <div class="brand">SW</div>
 
-                <p>
-                    In my current role, I lead sales professionals at <strong>Commenco</strong>, a technology solutions company. 
-                    Commenco specializes in safety and security solutions, however, we are most known for helping our customers solve their challenges with relentless focus and attention to detail. 
-                </p>
+    <ul class="middle-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li>
+        <a href="#Projects">Projects</a>
+        <ul class="dropdown">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </li>
+    </ul>
 
-                <p>
-                    I am continuing to challenge myself through continued education as I work towards completing my MBA at the University of Missouri-Columbia, with an expected completion in 2026.
-                    My background includes a Bachelor of General Studies that focused on Business Management and Psychology curriculum, which was also achieved at the University of Missouri-Columbia. 
-                    These educational experiences, combined with my time coaching elite-level athletes, have helped shape me into a passionate and team-oriented leader who values collaboration and perseverance.
-                </p>
+    <a href="contact.html" class="contact-button">Contact Me</a>
+  </nav>
 
-                <p>
-                    I believe in the continued pursuit of excellence and, by leveraging my expertise in coaching and business leadership, I strive to help others unlock their full potential and achieve their biggest goals.
-                </p>
-                
-                <br><br>
+  <header>
+    <h1>Seth Wilson</h1>
+  </header>
 
-                <blockquote>
-                    <strong> "Never put off until tomorrow what you can do today." - Benjamin Franklin </strong>
-                </blockquote>
+  <section>
+    <img src="https://picsum.photos/seed/picsum/400/250" alt="Placeholder image" class="center-img">
+  </section>
 
-                <br><br>
+  <main>
 
-                <a href="Wilsonresume.pdf" target="_blank">VIEW MY RESUME</a>
+    <section class="about-me">
+      <h2>Welcome</h2>
+      <p>
+        My name is Seth Wilson, and I am a <em>high-performance</em> coach, 
+        <em>sales leader</em>, and <em>business owner</em> from the Kansas City area.
+      </p>
 
-    </main>
-                <br><br><br><br>
-    <footer>
-             <p>&copy; 2025 Seth Wilson | asw54f@umsystem.edu | All rights reserved.</p>
-    </footer>
+      <h2>About Me</h2>
+      <p>
+        In my current role, I lead sales professionals at <strong>Commenco</strong>, 
+        a technology solutions company. Commenco specializes in safety and security solutions...
+      </p>
+      <p>
+        I am continuing to challenge myself through continued education as I work towards completing 
+        my MBA at the University of Missouri-Columbia, with an expected completion in 2026. 
+        My background includes a Bachelor of General Studies that focused on Business Management 
+        and Psychology curriculum, which was also achieved at the University of Missouri-Columbia.
+      </p>
+      <p>
+        I believe in the continued pursuit of excellence and, by leveraging my expertise in coaching 
+        and business leadership, I strive to help others unlock their full potential...
+      </p>
+    </section>
+
+
+    <div class="three-column">
+        <div class="credential">
+          <h3>Mizzou Grad</h3>
+          <p>Graduated from the University of Missouri with a General Studies degree that focused on Business and Psychology</p>
+        </div>
+        <div class="credential">
+          <h3>Crosby MBA (in progress)</h3>
+          <p>Pursuing my MBA with an emphasis in Marketing Analytics with an expected completion Spring 2027</p>
+        </div>
+        <div class="credential">
+          <h3>Business Coach</h3>
+          <p>Working with small business owners to unlock the potential they have to succeed in the marketplace</p>
+        </div>
+      </div>
+  </main>
+
+
+  <section>
+    <img src="https://picsum.photos/seed/picsum/600/400" alt="Example" class="lower-image">
+  </section>
+
+  <section class="quote-section">
+    <blockquote>
+      <strong>“Never put off until tomorrow what you can do today.”</strong> – Benjamin Franklin
+    </blockquote>
+    <p>
+      <a href="Wilsonresume.pdf" class="button" target="_blank">VIEW MY RESUME</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Seth Wilson | asw54f@umsystem.edu | All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
