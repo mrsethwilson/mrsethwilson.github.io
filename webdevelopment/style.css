@@ -19,6 +19,25 @@
   header h1 {
     margin: 0;
   }
+
+  .about-reflection {
+    margin: 20px auto;  
+    padding: 20px;    
+    background-color: #FFFFFF;  
+    border: none;      
+    box-shadow: none;   
+    max-width: 800px;  
+}
+  
+  .about-reflection p:not(:first-of-type) {
+    text-indent: 2rem; 
+}
+  
+  .about-reflection p:first-of-type::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f497d;
+}
   
   .center-img {
     display: block;
@@ -93,7 +112,11 @@
     padding: 1rem;
     margin-top: 1rem;
   }
-  footer p {
-    margin: 0;
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    color: #00347B;
   }
-  
