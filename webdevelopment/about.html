@@ -21,12 +21,17 @@ Tested: March 2025
 </head>
 <body>
 
-    <nav>
+    <nav class="nav">
+
         <div class="brand">SW</div>
-  
+        
+        <label for="toggle" class="hamburger">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        
         <ul class="middle-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
           <li>
             <a href="projects.html">Projects</a>
             <ul class="dropdown">
@@ -35,8 +40,11 @@ Tested: March 2025
               <li><a href="#">Link 3</a></li>
             </ul>
           </li>
+          <li class="contact-mobile">
+            <a href="#contact">Contact Me</a>
+          </li>
         </ul>
-  
+        
         <a href="#contact" class="contact-button">Contact Me</a>
       </nav>
 
