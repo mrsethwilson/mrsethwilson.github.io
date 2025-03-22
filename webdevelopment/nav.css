@@ -1,46 +1,59 @@
-nav {
+.nav {
     display: flex;
-    align-items: center;   
+    align-items: center;
+    justify-content: space-between;
     background-color: #0047BA;
     padding: 1rem;
     margin-bottom: 3rem;
     border: 1px solid #002E6D;
-    border-radius: 0;
   }
   
   .brand {
+    flex: 1;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-left: 1rem; 
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  #toggle {
+    display: none;
   }
   
   .middle-links {
-    flex: 1;                
-    display: flex;            
-    justify-content: center;   
+    flex: 1;
     list-style: none;
+    display: flex;  
+    justify-content: center;   
+    gap: 2rem;          
     margin: 0;
     padding: 0;
+    position: relative;
   }
   
   .middle-links li {
-    margin: 0 2rem;
-    position: relative; 
+    position: relative;
   }
-  .middle-links li a {
+  
+  .middle-links a {
     color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    position: relative;
   }
   
-  .middle-links li a:hover {
+  .middle-links a:hover {
     background-color: #002E6D;
   }
   
-.middle-links li .dropdown {
+  .middle-links li .dropdown {
     display: none;
     position: absolute;
     top: 100%;
@@ -50,7 +63,7 @@ nav {
     margin: 0;
     margin-top: 5px;
     padding: 0;
-    width: 150%;
+    width: 100%;
 }
 
 .middle-links li:hover .dropdown {
@@ -69,7 +82,6 @@ nav {
     font-weight: bold;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    width: 100%;
     text-align: center;
     box-sizing: border-box;
     border: .5px solid #FFFFFF; 
@@ -80,18 +92,67 @@ nav {
     width: 100%;
 }
   
-
   .contact-button {
-    margin-right: 1rem;       
-    display: inline-block;
     color: #FFFFFF;
     background-color: #0047BA;
-    border: 1px solid #FFFFFF; 
+    border: 1px solid #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+    margin-left: auto;
   }
+  
   .contact-button:hover {
-    background-color: #00347B;
+    background-color: #002E6D;
+  }
+  
+  .contact-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 810px) {
+    .hamburger {
+      display: block;
+    }
+    .contact-button {
+      display: none;
+    }
+    .middle-links {
+      display: none;          
+      flex-direction: column;
+      align-items: flex-end;       
+      width: 100%;
+      background-color: #0047BA;
+      margin: 1rem 0;
+    }
+    #toggle:checked ~ .middle-links {
+      display: flex;
+    }
+    .contact-mobile {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 428px) {
+    .hamburger {
+      display: block;
+    }
+    .contact-button {
+      display: none;
+    }
+    .middle-links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      background-color: #0047BA;
+      margin: 1rem 0;
+    }
+    #toggle:checked ~ .middle-links {
+      display: flex;
+    }
+    .contact-mobile {
+      display: block;
+    }
   }

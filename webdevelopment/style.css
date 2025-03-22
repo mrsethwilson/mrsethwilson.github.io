@@ -1,122 +1,172 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
   
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-  }
-  
-  header {
-    background-color: #0047BA;
-    font-size: 50px; 
-    color: #FFFFFF;
-    padding: 3rem;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-  }
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
 
-  .about-reflection {
-    margin: 20px auto;  
-    padding: 20px;    
-    background-color: #FFFFFF;  
-    border: none;      
-    box-shadow: none;   
-    max-width: 800px;  
+html {
+  font-family: "Helvetica neue", sans-serif
 }
   
-  .about-reflection p:not(:first-of-type) {
-    text-indent: 2rem; 
+header {
+  background-color: #0047BA;
+  font-size: 50px; 
+  color: #FFFFFF;
+  padding: 3rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+
+.about-reflection {
+  margin: 20px auto;  
+  padding: 20px;    
+  background-color: #FFFFFF;  
+  border: none;      
+  box-shadow: none;   
+  max-width: 800px;  
 }
   
-  .about-reflection p:first-of-type::first-letter {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1f497d;
+.about-reflection p:not(:first-of-type) {
+  text-indent: 2rem; 
 }
   
-  .center-img {
-    display: block;
-    margin: 3rem auto;
-  }
+.about-reflection p:first-of-type::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f497d;
+}
   
-  main {
-    background-color: #FFFFFF;
-    padding: 1rem 0;
-    margin: 0 2rem;
-  }
+.center-img {
+  display: block;
+  margin: 3rem auto;
+}
   
-  .about-me {
-    border: 1px solid #0047BA;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
+main {
+  background-color: #FFFFFF;
+  padding: 1rem 0;
+  margin: 0 2rem;
+}
   
-  .three-column-box {
-    background-color: #FFFFFF;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
+.about-me {
+  border: 1px solid #0047BA;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
   
+.three-column-box {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+  
+.three-column {
+  display: flex;
+  gap: 1rem;
+}
+  
+.three-column .credential {
+  flex: 1;
+  border: 1px solid #0047BA;
+  padding: 1rem;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.lower-image {
+  display: block;
+  width: 50%;
+  margin: 3rem auto 0 auto; 
+  height: auto;
+}
+  
+.quote-section {
+  text-align: center;
+}
+  
+blockquote {
+  font-style: italic;
+  margin: 1rem auto 3rem auto;
+}
+  
+.button {
+  display: inline-block;
+  padding: 0.5rem 10rem;
+  background-color: #0047BA;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #002E6D;
+}
+  
+.button:hover {
+  background-color: #002E6D;
+}
+  
+footer {
+  background-color: #0047BA;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+  
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 810px) {
+  #container {
+    width: 100%;
+  }
   .three-column {
-    display: flex;
-    gap: 1rem;
+    flex-direction: column;
   }
-
   .three-column .credential {
-    flex: 1;
-    border: 1px solid #0047BA;
-    padding: 1rem;
-    text-align: center;
-    background-color: #FFFFFF;
+    margin-bottom: 1rem;
   }
-  
   .lower-image {
-    display: block;
-    width: 50%;
-    margin: 3rem auto 0 auto; 
-    height: auto;
+    width: 100%;
   }
-  
-  .quote-section {
-    text-align: center;
-  }
-  blockquote {
-    font-style: italic;
-    margin: 1rem auto 3rem auto;
-  }
-  
   .button {
-    display: inline-block;
-    padding: 0.5rem 10rem;
-    background-color: #0047BA;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    border: 1px solid #00347B;
+    padding: 0.5rem 5rem;
   }
-  .button:hover {
-    background-color: #00347B;
+  header {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 2rem;
   }
-  
-  footer {
-    background-color: #0047BA;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
+}
+
+@media screen and (max-width: 428px) {
+  #container {
+    width: 100%;
   }
-  footer {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1rem 0;
-    background: none;
-    border: none;
-    color: #00347B;
+  .three-column {
+    flex-direction: column;
   }
+  .three-column .credential {
+    margin-bottom: 1rem;
+  }
+  .lower-image {
+    width: 100%;
+  }
+  .button {
+    padding: 0.5rem 5rem;
+  }
+  header {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+}
