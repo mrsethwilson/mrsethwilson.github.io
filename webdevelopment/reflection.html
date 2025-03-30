@@ -15,42 +15,54 @@ Tested: March 2025
 
   <meta charset="utf-8">
   <title>Reflection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
 </head>
 <body>
 
-    <nav class="nav">
-      <div class="brand">SW</div>
+    
+    <nav class="nav-container">
       
-      <label for="toggle" class="hamburger">&#9776;</label>
-      <input type="checkbox" id="toggle">
+        <!-- Branding on the left -->
+        <div class="nav-brand">SW</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-hamburger">&#9776;</label>
+        <ul class="nav-menu">
+          <!-- Navigation items here -->
+        </ul>
       
-      <ul class="middle-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="reflection.html">Reflection</a></li>
-        <li class="contact-mobile">
-          <a href="#contact">Contact Me</a>
-        </li>
-        <li>
-          <a href="projects.html">Projects</a>
-          <ul class="dropdown">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-        </li>
-      </ul>
+        <!-- Main navigation menu -->
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="reflection.html">Reflection</a></li>
+          
+          <!-- Projects with a submenu for desktop -->
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a class="submenu-link" href="#">Link 1</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Link 2</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Link 3</a></li>
+            </ul>
+          </li>
       
-      <a href="#contact" class="contact-button">Contact Me</a>
-    </nav>
+          <!-- Contact Me link (mobile only) -->
+          <li class="nav-item contact-mobile">
+            <a class="nav-link" href="#">Contact Me</a>
+          </li>
+        </ul>
+      
+        <!-- Contact Me button (desktop only) -->
+        <a href="#" class="contact-button">Contact Me</a>
+      </nav>
 
   <header>
     <h1>Reflection</h1>
   </header>
-
+  <div id="container">
   <main>
 
     <section class="about-reflection">
@@ -93,7 +105,7 @@ Tested: March 2025
       </section>
 
 </main>
-
+</div>
 
   <footer>
     <p>&copy; 2025 Seth Wilson | asw54f@umsystem.edu | All rights reserved.</p>
