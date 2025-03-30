@@ -192,3 +192,8 @@
         width: 100%;
     }
   }
+
+  .nav-toggle {
+    position: absolute;
+    left: -9999px;
+  }
