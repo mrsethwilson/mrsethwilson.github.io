@@ -165,9 +165,10 @@ footer {
   .button {
     padding: 0.5rem 5rem;
   }
-  header {
-    width: 100%;
-    font-size: 2.0rem;
-    padding: 2rem;
-  }
+header {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 2.0rem;
+  padding: 2rem;
+}
 }
