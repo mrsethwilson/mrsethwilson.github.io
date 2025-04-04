@@ -132,6 +132,11 @@ blockquote {
 .button:hover {
   background-color: #002E6D;
 }
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
   
 footer {
   margin-top: 0;
@@ -143,10 +148,7 @@ footer {
   padding: 2rem 0;
 }
   
-#container {
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 @media screen and (max-width: 810px) {
   #container {
