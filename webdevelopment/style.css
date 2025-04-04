@@ -15,7 +15,6 @@ html {
   font-family: "Helvetica neue", sans-serif;
 }
 
-/* example of using google font for the assignment */
 @font-face {
   font-family: 'BebasNeue';
   src: url('https://mrsethwilson.github.io/webdevelopment/BebasNeue-Regular.ttf') format('truetype');
