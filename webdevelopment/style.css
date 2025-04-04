@@ -135,16 +135,12 @@ blockquote {
   
 footer {
   margin-top: 0;
-  background-image: url("image/footer-bg.jpg");
+  background: url("https://mrsethwilson.github.io/webdevelopment/image/footer-bg.jpg") no-repeat center center;
+  background-size: cover;
   min-height: 200px;
   color: #FFFFFF;
   text-align: center;
-  padding: 2rem 0; 
-}
-
-footer p {
-  margin: 0;        
-  padding: 0;
+  padding: 2rem 0;
 }
   
 #container {
