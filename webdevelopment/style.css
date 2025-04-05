@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+  
 html, body {
-  height: 100%;
   width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -28,7 +28,7 @@ html {
   font-weight: 300;
   font-style: normal;
 }
-
+  
 header {
   background-color: #0047BA;
   font-size: 3.125rem; 
@@ -36,7 +36,7 @@ header {
   padding: 3rem;
   text-align: center;
   font-family: 'BebasNeue', sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em; 
 }
 
 header h1 {
@@ -46,26 +46,11 @@ header h1 {
 body {
   font-family: 'RobotoMedium', sans-serif;
 }
-
-#container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-}
-
-main {
-  flex: 1; 
-  background-color: #FFFFFF;
-  padding: 1rem 0;
-  margin: 0 2rem;
-}
-
+  
 .about-reflection p:not(:first-of-type) {
   text-indent: 2rem; 
 }
-
+  
 .about-reflection p:first-of-type::first-letter {
   font-size: 2.5rem;
   font-weight: bold;
@@ -77,32 +62,39 @@ main {
   padding: 20px;
   background-color: #f0f0f0; 
   border: 1px solid #ccc;   
+  box-sizing: border-box;    
   max-width: 800px;
 }
-
+  
 .center-img {
   display: block;
   margin: 3rem auto;
 }
-
+  
+main {
+  background-color: #FFFFFF;
+  padding: 1rem 0;
+  margin: 0 2rem;
+}
+  
 .about-me {
   border: 1px solid #0047BA;
   background-color: #FFFFFF;
   padding: 1rem;
   margin-bottom: 2rem;
 }
-
+  
 .three-column-box {
   background-color: #FFFFFF;
   padding: 1rem;
   margin-bottom: 2rem;
 }
-
+  
 .three-column {
   display: flex;
   gap: 1rem;
 }
-
+  
 .three-column .credential {
   flex: 1;
   border: 1px solid #0047BA;
@@ -110,23 +102,22 @@ main {
   text-align: center;
   background-color: #FFFFFF;
 }
-
 .lower-image {
   display: block;
-  width: 50%;
+  width: 560px;
+  height: 315px;
   margin: 3rem auto 0 auto; 
-  height: auto;
 }
-
+  
 .quote-section {
   text-align: center;
 }
-
+  
 blockquote {
   font-style: italic;
   margin: 1rem auto 3rem auto;
 }
-
+  
 .button {
   display: inline-block;
   padding: 0.5rem 10rem;
@@ -137,11 +128,16 @@ blockquote {
   border-radius: 4px;
   border: 1px solid #002E6D;
 }
-
+  
 .button:hover {
   background-color: #002E6D;
 }
-
+  
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+  
 footer {
   margin-top: 0;
   background: url("https://mrsethwilson.github.io/webdevelopment/image/footer-bg.jpg") no-repeat center center;
@@ -150,11 +146,6 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 2rem 0;
-}
-
-footer p {
-  margin: 0;
-  padding: 0;
 }
 
 footer img {
@@ -186,10 +177,6 @@ footer img:hover {
     font-size: 1.2rem;
     padding: 2rem;
   }
-    footer {
-    min-height: 150px;
-    padding: 1.5rem 0;
-  }
 }
 
 @media screen and (max-width: 428px) {
@@ -213,10 +200,6 @@ footer img:hover {
     margin: 0 auto;
     font-size: 1rem;
     padding: 2rem;
-  }
-    footer {
-    min-height: 120px;
-    padding: 1rem 0;
   }
 }
 
@@ -282,8 +265,6 @@ footer img:hover {
     margin-top: 0.5em !important;
     padding: 0 !important;
   }
-
-}
 
 }
 
