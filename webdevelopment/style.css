@@ -542,6 +542,11 @@
       flex-direction: column;
       text-align: center;
    }
+
+    .footer-item span {
+       display: block;
+       margin-top: 0.5rem;
+   }    
   
     .experiences-row1,
     .experiences-row2 {
