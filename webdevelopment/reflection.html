@@ -1,65 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
+
 <head>
 
-    <!--
-
+<!--
 Title: Reflection
 Use: Reflection page for personal website
 Author: Seth Wilson
 School/Term: University of Missouri - Columbia
 Developed: March 2025
-Tested: March 2025
-
+Tested: April 2025
 -->
 
-  <meta charset="utf-8">
   <title>Reflection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
-  <link rel="pic" href="image/email.ico" type="image/x-icon">
-  <link rel="pic" href="image/phone.ico" type="image/x-icon">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
+
+
+
+
 <body>
 
     
     <nav class="nav-container">
-      
         <div class="nav-brand">SW</div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-hamburger">&#9776;</label>
         <ul class="nav-menu">
-        </ul>
-      
-        <ul class="nav-menu">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="reflection.html">Reflection</a></li>
-          
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="projects.html">Experience</a>
             <ul class="submenu">
-              <li class="submenu-item"><a class="submenu-link" href="#">Link 1</a></li>
-              <li class="submenu-item"><a class="submenu-link" href="#">Link 2</a></li>
-              <li class="submenu-item"><a class="submenu-link" href="#">Link 3</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="projects.html#Commenco">Commenco</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="projects.html#KOMA">KOMA</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="projects.html#SideKick-Success">SideKick Success</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="projects.html#VersusTKD">VersusTKD</a></li>
             </ul>
           </li>
-      
           <li class="nav-item contact-mobile">
-            <a class="nav-link" href="#">Contact Me</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
-      
-        <a href="#" class="contact-button">Contact Me</a>
+        <a href="#contact" class="contact-button">Contact Me</a>
       </nav>
 
-  <header>
+
+
+
+<header>
     <h1>Reflection</h1>
-  </header>
+</header>
+
+
   <div id="container">
-  <main>
+
+
+<main>
+
+    <div class="home-2">
+        <a href="projects.html#Commenco"><img src="images/COMMENCO.jpg" alt="Commenco Experience"></a>
+        <a href="projects.html#KOMA"><img src="images/KOMA.jpg" alt="KOMA Experience"></a>
+        <a href="projects.html#SideKick-Success"><img src="images/Sidekick.jpg" alt="SideKick Success Experience"></a>
+        <a href="projects.html#VersusTKD"><img src="images/Versus.jpg" alt="Versus TKD Experience"></a>
+      </div>
 
     <section class="about-reflection">
         <h2>Reflection: My philosophy is born of my experiences.</h2>
@@ -103,14 +116,28 @@ Tested: March 2025
 </main>
 </div>
 
+
+
+
+
+
+
+
+
 <footer>
-    <p>
-      &copy; 2025 Seth Wilson | 
-      <img class="pic" src="image/email.ico" alt="Email Icon" style="vertical-align: middle; margin-right: 0.5rem;">
-      asw54f@umsystem.edu | 
-      <img class="pic" src="image/phone.ico" alt="Phone Icon" style="vertical-align: middle; margin-right: 0.5rem;">
-      1+888-888-8888 | All rights reserved.
-    </p>
+    <div class="footer-container">
+      <div class="footer-item footer-copy">
+        <span>&copy; 2025 Seth Wilson. All rights reserved.</span>
+      </div>
+      <div class="footer-item footer-email">
+        <img class="pic" src="images/email.svg" alt="Email Icon">
+        <span>asw54f@umsystem.edu</span>
+      </div>
+      <div class="footer-item footer-phone">
+        <img class="pic" src="images/phone.svg" alt="Phone Icon">
+        <span>1+888-888-8888</span>
+      </div>
+    </div>
   </footer>
 
 </body>
