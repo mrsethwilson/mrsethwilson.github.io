@@ -535,6 +535,13 @@
     .footer-container {
       grid-template-columns: 1fr;
     }
+     
+    .footer-item {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+   }
   
     .experiences-row1,
     .experiences-row2 {
