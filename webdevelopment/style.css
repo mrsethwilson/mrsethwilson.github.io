@@ -513,6 +513,14 @@
   border-bottom-right-radius: 4px;
 }
 
+.contact-table caption {
+  caption-side: top;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
 /* Contact Form */
 .contact-section {
   max-width: 600px;
