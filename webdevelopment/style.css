@@ -4,7 +4,7 @@
 
    * {
     box-sizing: border-box;
-  }
+   }
   
   html, body {
     width: 100%;
@@ -31,10 +31,6 @@
     font-display: swap;
   }
   
-  #container {
-    width: 100%;
-    margin: 0 auto;
-  }
   
   /* ==========================================================================
      02. Header Section
@@ -72,21 +68,14 @@
     box-sizing: border-box;
   }
   
-  /* ==========================================================================
-     04. Body Content
-     ========================================================================== */
-  
-  body {
-    font-family: 'RobotoMedium', sans-serif;
-  }
-  
+
   /* ==========================================================================
      05. Footer Section
      ========================================================================== */
   
   footer {
     margin-top: 0;
-    background: url("image/footer-bg.jpg") no-repeat center center;
+    background: url("images/footer-bg.jpg") no-repeat center center;
     background-size: cover;
     min-height: 200px;
     color: #FFFFFF;
@@ -215,7 +204,7 @@
     background-color: #FFFFFF;
     padding: 1rem;
     margin-bottom: 2rem;
-    border: 1px solid #0047BA;
+    border: 2px solid #93D500;
   }
   
   .about-me h2 {
@@ -240,7 +229,7 @@
   .about .credential {
     flex: 1;
     min-width: 250px;
-    border: 1px solid #0047BA;
+    border: 2px solid #93D500;
     padding: 1rem;
     text-align: center;
     background-color: #FFFFFF;
@@ -329,7 +318,7 @@
   .about-reflection p:first-of-type::first-letter {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #1f497d;
+    color: #93D500;
   }
   
   /* ==========================================================================
@@ -419,14 +408,189 @@
     color: #002E6D;
   }
   
-  /* ==========================================================================
-     10. Media Queries
-     ========================================================================== */
+
+/* ==========================================================================
+   10. Contact Page
+   ========================================================================== */
+
+   /* Contact Page Layout */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 48%;
+  max-width: 600px;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding-top: 0; 
+}
+
+.contact-header {
+  text-align: left;
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Contact Table */
+.contact-table-wrapper {
+  width: 100%;
+  padding: 16px;
+  background-color: #0047BA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.contact-table {
+  width: 100%;
+  table-layout: fixed; 
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #0047BA;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: 'RobotoMedium', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 10px;
+  border: none;
+  text-align: left;
+  vertical-align: middle;
+  white-space: normal; 
+  word-wrap: break-word;
+}
+
+.contact-table thead th {
+  background-color: #0047BA;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact-table tbody td {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.contact-table tbody tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.contact-table tfoot td {
+  background-color: #0047BA;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Contact Form */
+.contact-section {
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0047BA;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #002E6D;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "RobotoMedium", sans-serif;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #FFFFFF;
+  color: #0047BA;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #39546B;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #ff0000;
+  outline: none;
+}
+
+.required {
+  color: #000000;
+}
+
+
+/* ==========================================================================
+   Responsive Styles: Max Width 810px
+   ========================================================================== */
+   @media screen and (max-width: 810px) {
   
-  @media screen and (max-width: 810px) {
     .home {
       grid-template-columns: repeat(2, 1fr);
-    }  
+    }
   
     .home,
     .home-container,
@@ -434,36 +598,36 @@
       flex-direction: column;
       display: flex;
     }
-
-    .home-sidebar, 
+  
+    .home-sidebar,
     .home-text,
     .home-content {
       text-align: center;
     }
-
+  
     .home-image {
       justify-content: center;
       margin-top: 1rem;
     }
-
+  
     .home-image img {
       max-width: 250px;
     }
-    
+  
     .home-2 {
       grid-template-columns: 1fr;
       width: 90%;
-    }   
-    
+    }
+  
     .about-reflection {
       padding: 1rem;
       margin: 1rem;
     }
-
+  
     .about-reflection h2,
     .about-reflection p {
       text-align: center;
-    }      
+    }
   
     .lower-image {
       width: 100%;
@@ -497,7 +661,26 @@
     }
   }
   
-  @media screen and (max-width: 428px) {
+  /* ==========================================================================
+     Responsive Styles: Max Width 428px
+     ========================================================================== */
+  
+     @media screen and (max-width: 428px) {
+    .contact-left,
+    .contact-right {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .contact-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-header {
+      text-align: center;
+    }
+  
     .home {
       grid-template-columns: 1fr;
     }
@@ -506,15 +689,15 @@
       grid-template-columns: 1fr;
       width: 100%;
     }
-    
+  
     .about-reflection {
       padding: 0.5rem;
     }
-    
+  
     .about-reflection h2 {
       font-size: 1.2rem;
     }
-        
+  
     .three-column {
       flex-direction: column;
     }
@@ -532,27 +715,9 @@
       padding: 2rem;
     }
   
-  .footer-container {
-    display: flex; !important;
-    flex-direction: column; !important;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-item {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .footer-item span {
-    margin-top: 0.25rem;
-    display: block;
-  }
-
-  footer .pic {
-    margin: 0 auto;
-  }
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
   
     .experiences-row1,
     .experiences-row2 {
@@ -565,7 +730,7 @@
   }
   
   /* ==========================================================================
-     11. Print Styles
+     13. Print Styles
      ========================================================================== */
   
   @media print {
@@ -590,13 +755,13 @@
   
     body, h2, h3, p, li, blockquote, footer, .credential {
       color: #000 !important;
-      font-family: "Times New Roman", serif !important;
+      font-family: "RobotoMedium", sans-serif !important;
       font-size: 11.5pt !important;
       line-height: 1.2 !important;
     }
   
     h1 {
-      font-family: 'BebasNeue', serif !important;
+      font-family: 'BebasNeue', sans-serif !important;
       color: #000 !important;
       font-size: 1.5em !important;
       margin: 0 !important;
@@ -633,6 +798,3 @@
       padding: 0 !important;
     }
   }
-
-
-

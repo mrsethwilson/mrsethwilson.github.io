@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+<!--
+Title: Contact Me
+Use: Contact page for personal website
+Author: Seth Wilson
+School/Term: University of Missouri - Columbia
+Developed: April 2025
+Tested: April 2025
+-->
+
+  <title>Contact Me</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  
+</head>
+
+
+
+
+<body>
+
+    
+<nav class="nav-container">
+  <div class="nav-brand">SW</div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-hamburger">&#9776;</label>
+
+  <ul class="nav-menu">
+    <li class="nav-item"><label for="nav-toggle"><a class="nav-link" href="index.html">Home</a></label></li>
+    <li class="nav-item"><label for="nav-toggle"><a class="nav-link" href="about.html">About</a></label></li>
+    <li class="nav-item"><label for="nav-toggle"><a class="nav-link" href="reflection.html">Reflection</a></label></li>
+    <li class="nav-item"><label for="nav-toggle"><a class="nav-link" href="projects.html">Experience</a></label>
+      <ul class="submenu">
+        <li class="submenu-item"><a class="submenu-link" href="projects.html#Commenco">Commenco</a></li>
+        <li class="submenu-item"><a class="submenu-link" href="projects.html#KOMA">KOMA</a></li>
+        <li class="submenu-item"><a class="submenu-link" href="projects.html#SideKick-Success">SideKick Success</a></li>
+        <li class="submenu-item"><a class="submenu-link" href="projects.html#VersusTKD">VersusTKD</a></li>
+      </ul>
+    </li>
+    <li class="nav-item contact-mobile">
+      <label for="nav-toggle">
+        <a class="nav-link" href="Contact.html">Contact Me</a>
+      </label>
+    </li>
+  </ul>
+
+  <a href="Contact.html" class="contact-button">Contact Me</a>
+</nav>
+
+  
+  
+  
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+
+
+
+
+<main>
+  <div class="contact-wrapper">
+
+
+    <div class="contact-left">
+      <h2 class="contact-header">Contact Information</h2>
+      <div class="contact-table-wrapper">
+        <table class="contact-table" aria-label="Contact Information">
+          <thead>
+            <tr>
+              <th scope="col">Website Developer</th>
+              <th scope="col">Seth Wilson</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Office Location</td>
+              <td>Olathe, KS</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>asw54f@umsystem.edu</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>+1 (888) 888-8888</td>
+            </tr>
+            <tr>
+              <td>LinkedIn</td>
+              <td><a href="www.linkedin.com/in/wilson80">www.linkedin.com/in/wilson80</a></td>
+            </tr>
+            <tr>
+              <td>Twitter</td>
+              <td><a href="www.twitter.com">www.twitter.com</a></td>
+            </tr>
+            <tr>
+              <td>Website</td>
+              <td>www.SethWilson.com</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Last updated: April 2025</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="contact-right">
+      <h2 class="contact-header">Learn More</h2>
+      <div class="contact-section">
+        <form action="mailto:asw54f@umsystem.edu?subject=Portfolio/Professional%2FWebsite%2FContact" method="post" enctype="text/plain" onsubmit="showConfirmationMessage(event)">
+          <label for="firstName">First Name <span class="required">*</span></label>
+          <input type="text" id="firstName" name="First Name" placeholder="First name" required autofocus>
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="Last Name" placeholder="Last name" required>
+
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="Email" placeholder="Email address" required>
+
+          <label for="phone">Phone <span class="required">*</span></label>
+          <input type="text" id="phone" name="Phone" placeholder="888-888-8888" required>
+
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="Message" placeholder="Type your message here..." required></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+  
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-item footer-copy">
+        <span>&copy; 2025 Seth Wilson. All rights reserved.</span>
+      </div>
+      <div class="footer-item footer-email">
+        <img class="pic" src="image/email.svg" alt="Email Icon">
+        <span>asw54f@umsystem.edu</span>
+      </div>
+      <div class="footer-item footer-phone">
+        <img class="pic" src="image/phone.svg" alt="Phone Icon">
+        <span>1+888-888-8888</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
