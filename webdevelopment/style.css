@@ -282,9 +282,10 @@
      ========================================================================== */
      .home-2 {
       display: grid;
-      grid-template-columns: repeat(2, 3fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
-      width: 65%;
+      max-width: 550px;
+      width: 90%  
       margin: 2rem auto;
     }
     
@@ -295,8 +296,8 @@
     .home-2 img {
       width: 80%;
       max-width: 250px;
-      height: auto;
       display: block;
+      margin: 0 auto; 
       transition: transform 0.3s ease;
     }
     
