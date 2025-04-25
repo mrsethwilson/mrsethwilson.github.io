@@ -799,3 +799,12 @@ textarea:invalid {
       padding: 0 !important;
     }
   }
+
+
+
+@media screen and (max-width: 810px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;    
+  }
+}
