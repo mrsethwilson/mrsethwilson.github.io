@@ -816,3 +816,21 @@ textarea:invalid {
     max-width: 90%;    
   }
 }
+
+  /* ==========================================================================
+     14. Script Styles
+     ========================================================================== */
+
+  .breadcrumb {
+    font-family: 'RobotoMedium', sans-serif;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    margin: 1rem 2rem;
+  }
+  .breadcrumb a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
